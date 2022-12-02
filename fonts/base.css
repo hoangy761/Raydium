@@ -1,7 +1,10 @@
 :root{
 --background_color: rgb(19,26,53);
 --background_color_box:rgb(20,16,65);
+--background_color_main-right: rgb(12,9,40);
+--background_color_btn:rgb(19,43,69);
 --text_color: rgb(157,208,212);
 --text_color_hover: rgb(54,192,201);
+--background_liner: linear-gradient(125deg, rgb(27,63,85),rgb(21,36,62));
 }
 
