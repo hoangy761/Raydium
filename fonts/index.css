@@ -95,17 +95,20 @@ body {
 
 /* .list_top_left */
 .list_top_left {
-    width: 250px;
+    /* width: 250px; */
     height: 300px;
     overflow-y: scroll;
 }
 
 .list_bottom_left {
-    width: 250px;
+     /* width: 250px;  */
     height: 190px;
     overflow-y: scroll;
 
 }
+/* .list_top_left_btn_title{
+    display: none;
+} */
 
 .list-toots::-webkit-scrollbar {
     background-color: rgb(23, 47, 71);
@@ -146,24 +149,42 @@ body {
 }
 
 .list_top_left_btn_title {
-
+    padding-right: 26px;
     text-decoration: none;
     color: var(--text_color);
 }
 
 .spenrea {
     margin: 30px 0px;
-    width: 250px;
+    margin-left: 68px;
+    /* width: 250px; */
+    display: flex;
+    justify-content: space-between;
 }
 
 .spenrea_boder-bottom {
     margin: auto;
-    width: 110px;
+    width: 30%;
     border-bottom: 0.06px solid rgb(23, 47, 71);
 }
 
+.spenrea_icon{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.spenrea_icon:hover {
+    box-shadow: 0 0 5px var(--text_color_hover);
+}
+.spenrea_icon:active {
+    box-shadow: 0 0 10px var(--text_color_hover);
+}
+
 footer {
-    width: 250px;
+    /* width: 250px; */
     color: rgb(97, 114, 157);
     background-color: var(--background_color);
 
@@ -171,7 +192,7 @@ footer {
 
 footer span {
     margin-top: 10px;
-    padding-left: 55px;
+    padding-left: 50px;
 }
 
 
@@ -426,6 +447,12 @@ footer span {
     justify-content: space-around;
     border: 2px solid var(--text_color_right-main);
     cursor: pointer;
+}
+.right_main-body-icon-boder:hover {
+    box-shadow: 0 0 5px var(--text_color_hover);
+}
+.right_main-body-icon-boder:active {
+    box-shadow: 0 0 10px var(--text_color_hover);
 }
 
 .right_main-body-icon-boder-icon {

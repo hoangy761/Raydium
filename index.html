@@ -103,7 +103,13 @@
                 </ul>
             </div>
             <div class="spenrea">
-                <div class="spenrea_boder-bottom"></div>
+                <div class="spenrea_boder-bottom" id="spenrea_boder-bottom"></div>
+                <div class="spenrea_icon" onclick="zoomInOut()" id="spenrea_icon-left" title="show">
+
+                    <i class="list_top_left_btn_icon fa-sharp fa-solid fa-left-long" id="show_icon" ></i>
+                   
+                    <!-- <i class="list_top_left_btn_icon fa-solid fa-right-to-bracket"></i> -->
+                </div>
             </div>
             <div class="list_bottom_left list-toots">
                 <ul>
@@ -165,7 +171,7 @@
                 <div class="right_body">
                     <div class="right_main-body">
                         <div class="right_main-body_swap margin_top_38px">
-                            <div class="right_main-body_swap-boder">
+                            <div class="right_main-body_swap-boder" id="box_top">
                                 <div class="right_main-body_swap-boder_header">
                                     <div class="right_main-body_swap-boder_header-text">
                                         <span>From</span>
@@ -211,12 +217,12 @@
                             </div>
                         </div>
                         <div class="right_main-body-icon">
-                            <div class="right_main-body-icon-boder">
+                            <div class="right_main-body-icon-boder" onclick="swapIndex()">
                                 <i class=" right_main-body-icon-boder-icon fa-solid fa-retweet"></i>
                             </div>
                         </div>
                         <div class="right_main-body_swap">
-                            <div class="right_main-body_swap-boder">
+                            <div class="right_main-body_swap-boder" id="box_bottom">
                                 <div class="right_main-body_swap-boder_header">
                                     <div class="right_main-body_swap-boder_header-text">
                                         <span>From</span>
@@ -252,7 +258,7 @@
                                     </div>
                                     <div class="right_main-body_swap-boder_body_right">
                                         <div class="right_main-body_swap-boder_body_right-input">
-                                            <input type="text">
+                                            <input type="text" placeholder="Enter number">
                                         </div>
                                     </div>
                                 </div>
@@ -391,6 +397,8 @@
             </div>
         </div>
     </div>
+    <script src="js/right_main-body_swap.js"></script>
+    <script src="js/left.js"></script>
 </body>
 
 </html>
