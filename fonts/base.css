@@ -3,11 +3,14 @@
 --background_color_box:rgb(20,16,65);
 --background_color_main-right: rgb(12,9,40);
 --background_color_btn:rgb(19,43,69);
+--background_color_btn_hover: rgba(20, 34, 48, 0.619);
 --text_color: rgb(157,208,212);
---text_color_right-main: rgb(97, 114, 157);
+--text_color_right-main: rgb(74, 97, 164);
 --text_color_hover: rgb(54,192,201);
 --background_liner: linear-gradient(125deg, rgb(27,63,85),rgb(21,36,62));
---background_main-right_liner: linear-gradient(180deg, rgb(24,27,87),rgb(23,40,99));
+--background_main-right_liner: linear-gradient(250deg, rgb(22, 25, 83),rgb(41, 58, 119));
+--color_name_coin : rgb(167, 193, 253);
+--color_name_coin_hover : rgb(206, 218, 247);
 
 }
 
