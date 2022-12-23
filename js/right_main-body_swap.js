@@ -6,4 +6,5 @@ function swapIndex(){
     var tmp = box_top.innerHTML;
     box_top.innerHTML = box_bottom.innerHTML;
     box_bottom.innerHTML = tmp;
+
 }

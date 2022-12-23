@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./fonts/fontawesome-free-6.2.1-web/css/all.css">
     <link rel="stylesheet" href="./fonts/base.css">
     <link rel="stylesheet" href="./fonts/index.css">
+    <script src="node_modules/web3.js-browser/build/web3.js"></script>
     <title>ShaoLing</title>
 </head>
 
@@ -25,13 +26,13 @@
                     <div class="header_connect_noti">
                         <i class="header_connect_noti_item fa-regular fa-bell"></i>
                     </div>
-                    <div class="header_connect_wallet">
+                    <div class="header_connect_wallet" id="header_connect_wallet-id">
                         <div class="header_connect_wallet-icon">
                             <i class="header_connect_wallet-icon-item fa-sharp fa-solid fa-wallet"></i>
                         </div>
-                        <a href="" class="header_connect_wallet-text">
+                        <span href="" class="header_connect_wallet-text" id="header_connect_wallet-text-id">
                             Connect Wallet
-                        </a>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -396,10 +397,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="right_select">
+                <div class="right_select" id="right_main_select_id">
                     <div class="right_main_select" >
                         <div class="right_main_select_box" >
-                            <div class="right_main_select_box_boder" id="right_main_select_id">
+                            <div class="right_main_select_box_boder" >
                                 <div class="right_main_select_box_header">
                                     <div class="right_main_select_box_header_title">
                                         <h2>Select a token</h2>
@@ -740,6 +741,7 @@
     <script src="js/right_main-body_swap.js"></script>
     <script src="js/left.js"></script>
     <script src="js/right_main-searchToken.js"></script>
+    <script src="js/checkMM.js"></script>
 </body>
 
 </html>
