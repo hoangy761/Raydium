@@ -19,6 +19,7 @@ connectMM.onclick = function (){
         }).catch((err) =>{
             console.log(err)
         })
+        console.log(ethereum.networkVersion);
       }else{
        var conf =  confirm('Ban co muon install Metamask Wallet?');
        if(conf === true){
@@ -33,3 +34,32 @@ async function getAddress(){
 }
 
 var textAddress = document.getElementById('header_connect_wallet-text-id');
+
+
+ethereum.on('accountsChanged', (accounts) => {
+    // Handle the new accounts, or lack thereof.
+    // "accounts" will always be an array, but it can be empty.
+            addressWallet = accounts[0];
+
+            addressWallet = addressWallet.split('');
+            lengthAddress = addressWallet.length;
+            addressWalletShow = addressWallet[0]+addressWallet[1]+addressWallet[2]+addressWallet[3]
+            +'...'+addressWallet[(lengthAddress-4)]+addressWallet[(lengthAddress-3)]+addressWallet[(lengthAddress-2)]+addressWallet[(lengthAddress-1)];
+
+            console.log(addressWalletShow);
+            textAddress.innerText = addressWalletShow;
+
+            alert('Changed Account successfully!!!');
+
+            
+  });
+  
+  ethereum.on('chainChanged', (chainId) => {
+    // Handle the new chain.
+    // Correctly handling chain changes can be complicated.
+    // We recommend reloading the page unless you have good reason not to.
+    window.location.reload();
+    alert('Changed chain successfully!!!')
+    
+
+  });
