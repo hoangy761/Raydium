@@ -2,7 +2,7 @@ var connectMM = document.getElementById('header_connect_wallet-id');
 
 var addressWallet ='';
 var addressWalletShow='';
-connectMM.onclick = function (){
+connectMM.onclick = function getAddress_w(){
     if (typeof window.ethereum !== 'undefined') {
         console.log('MetaMask is installed!');
         getAddress().then((data) => {
@@ -59,7 +59,5 @@ ethereum.on('accountsChanged', (accounts) => {
     // Correctly handling chain changes can be complicated.
     // We recommend reloading the page unless you have good reason not to.
     window.location.reload();
-    alert('Changed chain successfully!!!')
-    
-
+    alert('Changed chain successfully!!!');
   });
