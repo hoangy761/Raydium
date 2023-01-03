@@ -300,7 +300,7 @@ footer span {
 
 
 .right_main-body {
-    width: 456px;
+    width: var(--width_right-swap);
     height: 406px;
     background-image: var(--background_main-right_liner);
     border-radius: 20px;
@@ -538,6 +538,13 @@ footer span {
     font-weight: 400;
 }
 
+.right_main-body-confirm-connect span {
+    text-decoration: none;
+    color: var(--text_color_hover);
+    font-size: 20px;
+    font-weight: 400;
+}
+
 /* right_main-footer */
 
 .right_main-footer {
@@ -551,7 +558,7 @@ footer span {
 
 .right_main-footer-box {
     margin-top: 40px;
-    width: 456px;
+    width: var(--width_right-swap);
     border-radius: 20px;
     background-image: var(--background_main-right_liner);
     display: flex;
@@ -653,7 +660,7 @@ footer span {
 }
 
 .right_main_select_box {
-    width: 456px;
+    width: var(--width_right-swap);
     background-image: var(--background_main-right_liner);
     border-radius: 20px;
     display: flex;
@@ -883,5 +890,9 @@ footer span {
     .right_main {
         margin-left: 0px;
         padding-left: 0px;
+    }
+
+    :root{
+        --width_right-swap: 80%
     }
 }
