@@ -20,3 +20,14 @@ function zoomInOut(){
         zoom.title = 'show';
     }
 }
+
+var setting_icon = document.getElementById('setting_icon');
+var lef_show = document.getElementById('left_id')
+setting_icon.onclick = function(){
+    
+    if(lef_show.style.display == 'block'){
+        lef_show.style.display = 'none';
+    }else{
+        lef_show.style.display = 'block';
+    }
+}
